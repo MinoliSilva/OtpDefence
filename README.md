@@ -81,3 +81,39 @@ The application syncs reported alphanumeric senders and anonymized metadata to S
 
 ---
 
+## ⚡ Setup & Installation Guidelines
+
+To build and run the source code locally for verification:
+
+### 1. Prerequisites
+- Ensure the Flutter SDK is installed (`^3.11.0` or later). Check with:
+  ```bash
+  flutter --version
+  ```
+- An Android Emulator or physical device configured with Developer Mode and USB Debugging enabled.
+
+### 2. Dependency Resolution
+Navigate to the project root and run:
+```bash
+flutter pub get
+```
+
+### 3. Run the Application
+Start the application on your active connected device:
+```bash
+flutter run
+```
+
+---
+
+## 🔬 Academic Evaluation & Viva Presentation Guide
+
+Since physical mobile carriers can delay or filter OTP testing on-demand, an **interactive SMS OTP Simulator Sandbox** is built directly into the UI's fourth tab:
+
+1. **Navigate to "Lab & Sandbox" Tab**: Allows on-screen generation of fake SMS payloads.
+2. **Select or Draft a Message**:
+   - Tap **"Verified Official Bank OTP"**: Simulates a secure, validated login feed from ComBank.
+   - Tap **"Critical Phishing URL Scam"**: Generates a warning heads-up notification identifying an unrecognized link hijacking the BOC brand name.
+3. **Trigger Incoming Feed**: Press **"Trigger Incoming Mock SMS"**. The app simulates notification intercept, pushes it through the multi-layer analyzer, saves it to database lists, and triggers standard Android heads-up alerts.
+
+
