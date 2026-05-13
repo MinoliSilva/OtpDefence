@@ -55,3 +55,29 @@ For ambiguous messages where the heuristic engine returns an uncertain score (30
 
 ---
 
+## 💻 Tech Stack & Integrations
+
+- **Frontend Framework:** Flutter (Dart SDK ^3.11.0)
+- **State Management:** Flutter Riverpod (^3.2.1)
+- **Database Back-end:** Supabase Client (^2.12.0)
+  - Features dynamic verified institution tables and reports.
+- **AI Engine API:** Groq Cloud SDK with Gemma-2 (Strict JSON-format outputs)
+- **Security & Utilities:**
+  - `local_auth` for Biometrics (Fingerprint/FaceID & Pattern Fallbacks).
+  - `flutter_local_notifications` for instant Heads-Up alerts.
+  - `flutter_animate` for high-performance visual transitions.
+  - `shared_preferences` for encrypted/secure local flags.
+
+---
+
+## 🗄️ Database Schema (Supabase Real-Time Sync)
+
+The application syncs reported alphanumeric senders and anonymized metadata to Supabase. This forms a collaborative threat intelligence shield across all installed devices:
+
+1. **`trusted_senders`**: Preloaded lookup table of registered financial/service institutions (Dialog, ComBank, HNB, Sampath).
+2. **`scam_number_hashes`**: Stores SHA-256 hashes of numbers flagged by multiple community users.
+3. **`risk_rules`**: A table containing RegEx and keyword weighting vectors, allowing real-time over-the-air updates to client engines.
+4. **`analytics`**: Stores anonymized, non-PII risk levels and rules triggered to compile aggregate regional dashboard statistics.
+
+---
+
