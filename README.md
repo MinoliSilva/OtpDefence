@@ -4,16 +4,6 @@ An advanced, real-time OTP security shielding application designed to combat SMS
 
 ---
 
-## 🎓 Academic Submission Metadata
-
-- **Project Title:** OTP Spoofing & Phishing Defense System
-- **University:** University of Plymouth (UK)
-- **Course:** BSc (Hons) in Computer Science / Software Engineering
-- **Student Name:** Minoli Silva
-- **Developer Profile:** [@MinoliSilva](https://github.com/MinoliSilva)
-- **Target Platform:** Android (SDK 21+)
-
----
 
 ## 🛡️ Project Overview
 
